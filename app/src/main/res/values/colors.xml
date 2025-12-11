@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Colores básicos que ya tenías -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- NUEVOS COLORES PARA EL TEMA -->
+    <color name="mi_azul_primario">#3F51B5</color>
+    <color name="mi_azul_oscuro">#303F9F</color>
+    <color name="mi_fondo_app">#F5F5F5</color>
+    <color name="mi_fondo_tarjeta">#FFFFFF</color>
+
+    <!-- NUEVOS COLORES PARA TEXTO -->
+    <color name="texto_principal">#DE000000</color> <!-- Negro con 87% de opacidad -->
+    <color name="texto_secundario">#8A000000</color> <!-- Negro con 54% de opacidad -->
+</resources>

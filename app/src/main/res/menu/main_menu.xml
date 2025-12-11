@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Este es el ítem de búsqueda que ya tenías -->
+    <item
+        android:id="@+id/action_search"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="Buscar"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="ifRoom|collapseActionView" />
+
+    <!-- INICIO: ÍTEM NUEVO PARA EL HISTORIAL -->
+    <item
+        android:id="@+id/action_view_log"
+        android:icon="@android:drawable/ic_menu_recent_history"
+        android:title="Ver Historial"
+        app:showAsAction="ifRoom" />
+    <!-- FIN: ÍTEM NUEVO PARA EL HISTORIAL -->
+
+</menu>
+    

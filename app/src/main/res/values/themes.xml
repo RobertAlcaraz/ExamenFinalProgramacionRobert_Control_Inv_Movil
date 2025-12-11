@@ -1,0 +1,28 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Control_Inv_Movil" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Colores de la app -->        <item name="colorPrimary">@color/mi_azul_primario</item>
+        <item name="colorPrimaryVariant">@color/mi_azul_oscuro</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="android:colorBackground">@color/mi_fondo_app</item>
+        <item name="colorSurface">@color/mi_fondo_tarjeta</item>
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+
+        <!-- Atributos para los colores de texto -->
+        <item name="android:textColorPrimary">@color/texto_principal</item>
+        <item name="android:textColorSecondary">@color/texto_secundario</item>
+    </style>
+
+    <!--
+      ESTILO MEJORADO: Se aplica al TextInputLayout para controlar
+      tanto el color del hint (etiqueta) como el color del texto
+      que el usuario escribe.
+    -->
+    <style name="EstiloPersonalizado_TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <!-- Color del hint (la etiqueta que flota) -->
+        <item name="android:textColorHint">@color/texto_secundario</item>
+        <!-- Color del borde y del hint cuando está enfocado -->
+        <item name="boxStrokeColor">@color/mi_azul_primario</item>
+    </style>
+
+</resources>

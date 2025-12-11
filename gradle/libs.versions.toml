@@ -1,0 +1,65 @@
+
+[versions]
+# --- Versiones para los Plugins ---
+androidGradlePlugin = "8.4.2"
+kotlin = "1.9.23"
+
+# --- Versiones para las Librerías del Proyecto (TODAS AJUSTADAS) ---
+coreKtx = "1.12.0"          # Bajada desde 1.16.0
+appcompat = "1.7.0"
+material = "1.12.0"
+activity = "1.9.0"          # Bajada desde 1.12.1 y unificada
+constraintlayout = "2.1.4"
+lifecycle = "2.8.1"         # Pequeño ajuste para máxima compatibilidad
+room = "2.6.1"
+retrofit = "2.9.0"          # Bajada desde 2.11.0 por estabilidad
+coroutines = "1.8.0"
+
+# --- Versiones para librerías de test ---
+junit = "4.13.2"
+androidxJunit = "1.1.5"     # Ajuste de versión
+espressoCore = "3.5.1"
+      # Ajuste de versión
+
+# --- TODAS las versiones conflictivas y duplicadas como "activityVersion" han sido ELIMINADAS ---
+
+
+[libraries]
+# --- Librerías Básicas de AndroidX ---
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+androidx-activity-ktx = { group = "androidx.activity", name = "activity-ktx", version.ref = "activity" } # <-- Alias único y correcto
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+
+# --- Arquitectura y Ciclo de Vida ---
+androidx-lifecycle-viewmodel-ktx = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version.ref = "lifecycle" }
+androidx-lifecycle-livedata-ktx = { module = "androidx.lifecycle:lifecycle-livedata-ktx", version.ref = "lifecycle" }
+
+# --- Room (Base de datos local) ---
+androidx-room-runtime = { module = "androidx.room:room-runtime", version.ref = "room" }
+androidx-room-compiler = { module = "androidx.room:room-compiler", version.ref = "room" }
+androidx-room-ktx = { module = "androidx.room:room-ktx", version.ref = "room" }
+
+# --- Retrofit (Conexión a servidor) ---
+retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
+converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "retrofit" }
+
+# --- Coroutines (Hilos secundarios) ---
+kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "coroutines" }
+kotlinx-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "coroutines" }
+
+# --- Librerías de Testing ---
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "androidxJunit" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+
+androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+
+# --- La librería conflictiva duplicada de "activity" ha sido ELIMINADA ---
+
+
+[plugins]
+# --- Plugins de Gradle ---
+android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
